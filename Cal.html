@@ -1,0 +1,85 @@
+<html>
+<head>
+<title>Calculator Design</title>
+<style type="text/css">
+td{
+color:white;
+font-size:33px;
+background-color:teal;
+}
+input{
+font-size:22px;
+padding:6px;
+border-radius:9px;
+}
+</style>
+<script language="javascript">
+function add()
+{
+var a,b,c
+a=parseInt(document.f1.a1.value)
+b=parseInt(document.f1.a2.value)
+c=a+b
+document.f1.a3.value=c
+}
+function sub()
+{
+var a,b,c
+a=parseInt(document.f1.a1.value)
+b=parseInt(document.f1.a2.value)
+c=a-b
+document.f1.a3.value=c
+}
+function mul()
+{
+var a,b,c
+a=parseInt(document.f1.a1.value)
+b=parseInt(document.f2.a2.value)
+c=a*b
+document.f1.a3.value=c
+}
+function div()
+{
+var a,b,c
+a=parseInt(document.f1.a1.value)
+b=parseInt(document.f1.a2.value)
+c=a/b
+document.f1.a3.value=c
+}
+</script>
+</head>
+<body bgcolor="#224455">
+<form name="f1">
+<table width="640" border="3" bordercolor="white" align="center" cellpadding="2">
+<tr>
+<td>Enter 1st number</td>
+<td>
+<input type="text" name="a1">
+</td>
+</tr>
+<tr>
+<td>Enter 2nd number</td>
+<td>
+<input type="text" name="a2">
+</td>
+</tr>
+<tr>
+<td>Output</td>
+<td>
+<input type="text" name="a3">
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<center>
+<input type="button" value="add" onclick="add()">
+<input type="button" value="sub" onclick="sub()">
+<input type="button" value="mul" onclick="mul()">
+<input type="button" value="div" onclick="div()">
+<input type="react" value="reset">
+</center>
+</td>
+</tr>
+</table>
+</form>
+</body>
