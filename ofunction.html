@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Function</title>
+<style type="text/css">
+span{
+color:white;
+font-size:30px;
+}
+input{
+font-size:22px;
+}
+</style>
+<script language="javascript">
+function abc()
+{
+var a,b
+a=new Date()
+b=a.getHours()
+if(b<=12)
+{
+documet.f1.a1.value=a.getHours()+":"+a.getMinutes()+":"+a.getSeconds()+"am"
+}
+else
+{
+document.f1.a1.value=a.getHours()+":"+a.getMinutes()+":"+a.getSeconds()+"pm"
+}
+}
+</script>
+</head>
+<body bgcolor="green" onload="abc()">
+<form name="f1">
+<span>Time:</span>
+<input type="text" name="a1">
+</form>
+</body>
+</html>
